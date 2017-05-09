@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">自动抢红包</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="red_env_description">开启此辅助功能，打开微信自动抢红包，无需手动</string>
+    <string name="sp_set_tips1">tips:在"设置-辅助功能-服务"中,点击"自动抢红包",并打开开关。</string>
+    <string name="sp_set_tips2">tips:如果您有手势或者密码锁屏等。当处于锁屏时将不能自动抢红包。</string>
+    <string name="sp_set_tips3">tips:群消息设置开启了免打扰模式之后，对应该群发布的红包将不能自动抢。</string>
+    <string name="sp_set_tips4">4.在"设置-我-新消息提醒-接收新消息通知/通知详情显示"。打开新消息通知和通知详情显示</string>
+    <string name="sp_sweet_tips">温馨提示：关闭密码锁屏 提高抢红包成功率。</string>
+    <string name="running_state">抢红包功能已打开，你现在可以去做其他事情啦，我会给你自动抢的~</string>
+    <string name="goset_bt_text1">去开启</string>
+    <string name="goset_bt_text2">去关闭</string>
+    <string name="goset_bt_text3">去微信</string>
+    <string name="help_title_tips1">1.三步搞定必须设置</string>
+    <string name="help_title_tips2">2.为什么我不能自动抢红包</string>
+    <string name="set1_tips">第一步：开启辅助功能（必须开启）</string>
+    <string name="set2_tips">第二步：关闭密码锁屏 提高抢红包成功率（建议关闭）。</string>
+    <string name="set3_tips">第三步：请确认微信群消息未开启免打扰设置。</string>
+    <string name="set4_tips">1.请确保帮助中自动抢红包必须设置已配置完成。</string>
+    <string name="set5_tips">2.请确保您的网络信号正常，越稳定通畅的网络抢到红包的可能性越高。</string>
+    <string name="set6_tips">3.不要进入群里，自动抢红包会自己进群抢红包，并自己回到手机桌面上的，这就是全自动的威力。如果您当前所在群正在发布红包，就和朋友拼一下手速吧，嘿嘿</string>
+    <string name="set7_tips">4.请确保通知栏有微信消息提示。</string>
+    <string name="set8_tips">5.自动抢红包运行后要点一下“开抢”按钮，不要清理进程，点到桌面上运行微信/QQ即可。</string>
+    <string name="qq_text"></string>
+</resources>

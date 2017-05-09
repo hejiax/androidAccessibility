@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/bannercontainer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/bg">
+        <RelativeLayout
+            android:layout_width="1200dp"
+            android:id="@+id/adbanner"
+            android:layout_height="75dp"
+            android:alpha="0"
+            >
+            <!-- ViewPager是一个控件 -->
+            <!--<com.shuiguo.base.WrapContentHeightViewPager-->
+                <!--android:id="@+id/adv_pager"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_marginTop="-28px"-->
+                <!--android:layout_height="60dp" >-->
+
+            <!--</com.shuiguo.base.WrapContentHeightViewPager>-->
+            <com.shuiguo.base.WrapContentHeightViewPager
+                android:id="@+id/adv_pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+            </com.shuiguo.base.WrapContentHeightViewPager>
+            <LinearLayout
+                android:id="@+id/viewGroup"
+                android:layout_below="@id/adv_pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:gravity="right"
+                android:orientation="horizontal" >
+            </LinearLayout>
+        </RelativeLayout>
+    <com.shuiguo.view.TDImageButton
+        android:id="@+id/star_bt"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        android:background="@mipmap/start"
+        android:layout_above="@+id/sweet_tips_text"
+        android:layout_marginBottom="15dp"/>
+    <com.shuiguo.view.TDImageButton
+        android:id="@+id/love_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/hoveone"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="25dp"
+        />
+    <com.shuiguo.view.TDImageButton
+        android:id="@+id/share_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/share"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/love_bt"
+        android:layout_marginBottom="20dp"
+        android:alpha="0"/>
+    <com.shuiguo.view.TDImageButton
+        android:id="@+id/sound_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/sound_on"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/love_bt"
+        android:layout_toLeftOf="@+id/share_bt"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="20dp"/>
+    <com.shuiguo.view.TDImageButton
+        android:id="@+id/help_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/help"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/love_bt"
+        android:layout_toRightOf="@+id/share_bt"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="20dp"/>
+    <TextView
+        android:id="@+id/sweet_tips_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sp_sweet_tips"
+        android:textColor="#ffffffff"
+        android:textSize="12sp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/sound_bt"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/qq_text"
+        android:textColor="#ffffffff"
+        android:textSize="12sp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"/>
+    </RelativeLayout>
+
+</LinearLayout>

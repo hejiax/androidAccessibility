@@ -1,0 +1,55 @@
+apply plugin: 'com.android.application'
+
+android {
+	compileSdkVersion 23
+	buildToolsVersion "23.0.2"
+
+	defaultConfig {
+		applicationId "com.shuiguo.redenvelope"
+		minSdkVersion 14
+		targetSdkVersion 23
+		versionCode 3
+		versionName "1.2.0"
+	}
+
+	buildTypes {
+		release {
+			minifyEnabled true
+			proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+		}
+	}
+
+	productFlavors {
+//		hongbao1 {
+//			manifestPlaceholders = [RED_ENV_AID : 253, RED_ENV_PID : 254, RED_ENV_DID : 232,
+//			                        RED_ENV_APP_ID : "87d36332a7f498cd",
+//			                        RED_ENV_APP_KEY : "83027e5a00be4e304a3c676231f0c3bf"]
+//		}
+//
+//		hongbao2 {
+//			manifestPlaceholders = [RED_ENV_AID : 253, RED_ENV_PID : 255, RED_ENV_DID : 233,
+//			                        RED_ENV_APP_ID : "c53b4c60eb1eb3fc",
+//			                        RED_ENV_APP_KEY : "373761c8d7b56994b373a8072f534841"]
+//		}
+//
+//		hongbao3 {
+//			manifestPlaceholders = [RED_ENV_AID : 253, RED_ENV_PID : 256, RED_ENV_DID : 234,
+//			                        RED_ENV_APP_ID : "b8739b5a1c89d0a4",
+//			                        RED_ENV_APP_KEY : "951d5fcfbec5e76cb6e6d052e4aa29a6"]
+//		}
+//
+//		hongbao4 {
+//			manifestPlaceholders = [RED_ENV_AID : 253, RED_ENV_PID : 257, RED_ENV_DID : 235,
+//			                        RED_ENV_APP_ID : "2dbd83cd3aa5c9cc",
+//			                        RED_ENV_APP_KEY : "d4c7ce871657d00ba728a9ce27f0c9dd"]
+//		}
+	}
+}
+
+dependencies {
+	compile fileTree(include: ['*.jar'], dir: 'libs')
+	compile 'com.squareup.picasso:picasso:2.5.0'
+	compile files('libs/Command.jar')
+	compile 'com.google.code.gson:gson:2.3.1'
+	compile 'com.android.support:support-v4:24.0.0-beta1'
+}
